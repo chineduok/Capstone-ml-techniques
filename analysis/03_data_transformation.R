@@ -1,6 +1,6 @@
 #summarize sales yearly by store by products
 
-names(store_sales)
+
 # create a column for total sales per store
 store_sales.1<-store_sales %>% mutate(Total = rowSums(across(Dry_Grocery:General_Merchandise)))
 
